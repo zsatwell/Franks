@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="the homepage of the Frank's Flame Grill website"
+    />
+    <title>Frank's Flame Grill</title>
+    <!-- CSS and Google Fonts -->
+    <link rel="stylesheet" href="styles/franksStyles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Main grid container -->
+    <div class="homeContainer">
+      <!-- Header -->
+      <div class="homeHeader">
+        <h1>Frank's Flame Grill</h1>
+      </div>
+      <!-- Navigation -->
+      <div class="homeNav">
+        <nav class="navLinks">
+          <ul>
+            <li><a href="franks.html">Home</a></li>
+            <li><a href="menu.php">Our Menu</a></li>
+            <li><a href="franksContact.php">Book Now</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Logos -->
+      <div class="homeImage">
+        <picture class="homeLogo">
+          <source media="(max-width: 423px)" srcset="images/logoSmall.png" />
+          <source media="(max-width: 768px)" srcset="images/logoMed2.png" />
+          <source media="(min-width: 769px)" srcset="images/logoLarge.png" />
+          <img src="images/logoLarge.png" alt="the large version of the logo" />
+        </picture>
+        <!-- Background Image -->
+        <picture>
+          <source
+            media="(max-width: 423px)"
+            srcset="images/backgroundImg_small.jpg"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="images/backgroundImg_medium.jpg"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="images/backgroundImg_large.jpg"
+          />
+
+          <img
+            src="images/backgroundImg.jpg"
+            alt="image of burgers cooking on a grill"
+            class="backgroundImg"
+          />
+        </picture>
+        <!-- Menu Button -->
+        <div class="homeImageButton">
+          <a href="menu.php" class="menuButton">View our Menu</a>
+        </div>
+      </div>
+      <!-- Informational section -->
+      <div class="homeContent">
+        <h2>What's our story?</h2>
+        <p>
+          The story of Frank's Flame Grill started all the way back in 1990,
+          when Frank Fire got a job at a local burger resturant in his hometown
+          of Utopia, Texas as a dishwasher. Over the years he moved up the
+          positions, until he became the manager. His time here is what
+          developed his love of cooking delicious burgers, with fresh
+          ingredients. In 2012 he moved to Waco, Texas to start his own food
+          truck selling, afordable, delicious, and high quality burgers, and
+          Frank's Flame Grill was born.
+        </p>
+      </div>
+      <!-- Footer -->
+      <div class="homeFooter">
+        <footer>
+          <div>
+            <p>&copy; 2022-2023 Frank's Flame Grill</p>
+            <p>
+              <a href="contact.php">Send us a message!</a>
+            </p>
+            <p>All rights reserved</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

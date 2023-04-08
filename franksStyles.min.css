@@ -1,0 +1,607 @@
+.homeContainer {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 175px 750px 750px 175px;
+  grid-template-rows: 100px 850px 300px 175px;
+  grid-template-areas: ". header nav ." ". image image." ". content content." ". footer footer.";
+}
+.homeHeader {
+  grid-column: 2 / 3;
+  background-color: #f53731;
+  padding: 10px;
+  align-items: center;
+  grid-area: header;
+}
+.homeNav {
+  grid-column: 3 / 4;
+  background-color: #f53731;
+  padding: 10px;
+  grid-area: nav;
+}
+.homeFooter {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+  background-color: #f53731;
+  text-align: center;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1em;
+  grid-area: footer;
+}
+.homeImage {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  grid-area: image;
+}
+.homeContent {
+  grid-column: 2 / 4;
+  text-align: center;
+  font-size: calc(1em * 1.5);
+  padding-left: 100px;
+  padding-right: 100px;
+  grid-area: content;
+}
+.menuContainer {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 175px 750px 750px 175px;
+  grid-template-rows: 100px 300px 300px 300px 200px 175px;
+  grid-template-areas: ". header header ." ". logo logo ." ". menu1 menu2 ." ". menu3 menu4 ." ". content content ." ". footer footer .";
+}
+.menuHeader {
+  grid-column: 2 / 3;
+  background-color: #f53731;
+  padding: 10px;
+}
+.menuNav {
+  grid-column: 3 / 4;
+  background-color: #f53731;
+  padding: 10px;
+}
+.menuFooter {
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
+  background-color: #f53731;
+  padding: 10px;
+  text-align: center;
+}
+.menuLogo {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+.menuCater {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+  text-align: center;
+}
+.menu1 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+.menu2 {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+.menu3 {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+.menu4 {
+  grid-column: 3 / 5;
+  grid-row: 4 / 5;
+}
+.contactContainer {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 100px 750px 750px 100px;
+  grid-template-rows: 100px 350px 500px 175px;
+  grid-template-areas: ". header header ." ". logo logo ." ". form output ." ". footer footer .";
+}
+.contactHeader {
+  grid-column: 2 / 3;
+  background-color: #f53731;
+  padding: 10px;
+}
+.contactNav {
+  grid-column: 3 / 4;
+  background-color: #f53731;
+  padding: 10px;
+}
+.contactFooter {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+  background-color: #f53731;
+  padding: 10px;
+  text-align: center;
+}
+.contactLogo {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+.contactForm {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+.contactOutput {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+.formButton {
+  background-color: #bc1510;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Roboto", Arial, sans-serif;
+  border: none;
+}
+.navWrapper {
+  display: inline-block;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+nav li {
+  font-size: 24px;
+  padding: 10px;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 700;
+}
+a:link {
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+}
+a:hover {
+  background-color: #fff;
+  color: #f53731;
+  box-shadow: 3px 3px 5px #000;
+}
+.homeLogo {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.homeImageButton {
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: -125px;
+  margin-bottom: -50px;
+}
+.menuButton {
+  background-color: #bc1510;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto", Arial, sans-serif;
+  border: none;
+  box-shadow: 3px 3px 5px #000;
+  border-radius: 10px;
+}
+.menuLogoTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #bc1510 3px solid;
+}
+.cateringSection {
+  border-top: #bc1510 3px solid;
+}
+.menuItem {
+  padding: 20px;
+  background-color: #fff;
+}
+.menuImage {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+.menuDescription {
+  display: inline-block;
+  text-align: center;
+  max-width: 300px;
+}
+.contactLogoTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #bc1510 3px solid;
+  text-align: center;
+}
+.contactForm {
+  padding: 20px;
+  display: inline-block;
+}
+.formOutput {
+  padding: 20px;
+  display: inline-block;
+}
+.warning {
+  color: #bc1510;
+}
+.contactP {
+  text-align: center;
+}
+p {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: calc(1em);
+  line-height: 36px;
+}
+h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: calc(1em * 1.5);
+  line-height: 36px;
+  color: #bc1510;
+}
+h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: calc(1em * 1.5 * 1.5);
+  line-height: 36px;
+  color: #bc1510;
+}
+h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: calc(1em * 1.5 * 1.5 * 1.5);
+  color: #fff;
+  line-height: 30px;
+}
+nav li {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: calc(1em * 1.5);
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .homeContainer {
+    display: grid;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 100px 432px 425px 170px;
+    grid-template-areas: "header nav" "image image" "content content" "footer footer";
+  }
+  .homeHeader {
+    grid-column: 1;
+    grid-row: 1;
+    grid-area: header;
+  }
+  .homeNav {
+    grid-column: 2;
+    grid-row: 1;
+    grid-area: nav;
+    padding: 0;
+  }
+  .homeImage {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    grid-area: image;
+    height: 99%;
+  }
+  .homeContent {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    grid-area: content;
+  }
+  .homeFooter {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    grid-area: footer;
+  }
+  nav li {
+    font-size: 16px;
+    justify-content: left;
+    padding: 5px;
+    align-content: center;
+  }
+  nav ul {
+    padding-left: 0;
+    justify-content: center;
+    margin: auto;
+  }
+  .navLinks {
+    padding-top: 36px;
+  }
+  .homeImageButton {
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -100px;
+    margin-bottom: -50px;
+  }
+  .menuContainer {
+    display: grid;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 100px 300px 400px 400px 400px 400px 225px 165px;
+    grid-template-areas: "header nav" "logo logo" "menu1 menu1" "menu2 menu2" "menu3 menu3" "menu4 menu4" "cater cater" "footer footer";
+    padding: 1em;
+    justify-content: center;
+  }
+  .menuHeader {
+    grid-column: 1;
+    grid-row: 1;
+    grid-area: header;
+    text-align: center;
+  }
+  .menuNav {
+    grid-column: 2;
+    grid-row: 1;
+    grid-area: nav;
+    padding: 0;
+  }
+  .menuLogo {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    grid-area: logo;
+  }
+  .menu1 {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    grid-area: menu1;
+  }
+  .menu2 {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    grid-area: menu2;
+  }
+  .menu3 {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    grid-area: menu3;
+  }
+  .menu4 {
+    grid-column: 1 / 2;
+    grid-row: 6;
+    grid-area: menu4;
+  }
+  .menuCater {
+    grid-column: 1 / 2;
+    grid-row: 7;
+    grid-area: cater;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .menuFooter {
+    grid-column: 1 / 2;
+    grid-row: 8;
+    grid-area: footer;
+  }
+  .menuImage {
+    display: inline;
+    padding-bottom: 0;
+  }
+  .menuDescription {
+    display: inline;
+  }
+  .menuItem {
+    justify-content: center;
+    text-align: center;
+  }
+  .cateringSection {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  nav li {
+    font-size: 16px;
+    justify-content: left;
+    padding: 5px;
+    align-content: center;
+  }
+  nav ul {
+    padding-left: 0;
+    justify-content: center;
+    margin: auto;
+  }
+  .navLinks {
+    padding-top: 36px;
+  }
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 100px 350px 550px 300px 165px;
+    grid-template-areas: "header nav" "logo logo" "form form" "output output" "footer footer";
+    padding: 1em;
+  }
+  .contactHeader {
+    grid-column: 1;
+    grid-row: 1;
+    grid-area: header;
+  }
+  .contactNav {
+    grid-column: 2;
+    grid-row: 1;
+    grid-area: nav;
+  }
+  .contactLogo {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    grid-area: logo;
+  }
+  .contactForm {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    grid-area: form;
+    display: inline;
+  }
+  .contactOutput {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    grid-area: output;
+    display: inline;
+  }
+  .contactFooter {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    grid-area: footer;
+  }
+}
+@media only screen and (max-width: 423px) {
+  html {
+    font-size: 70%;
+  }
+  .homeContainer {
+    display: grid;
+    grid-template-columns: 425px;
+    grid-template-rows: 80px 80px 250px 550px 180px;
+    grid-template-areas: "header" "nav" "image" "content" "footer";
+    padding: 1em;
+  }
+  .homeHeader {
+    grid-row: 1;
+    grid-area: header;
+    text-align: center;
+  }
+  .homeNav {
+    grid-row: 2;
+    grid-area: nav;
+  }
+  .homeImage {
+    grid-row: 3;
+    grid-area: image;
+    height: 240px;
+  }
+  .homeContent {
+    grid-row: 4;
+    grid-area: content;
+  }
+  .homeFooter {
+    grid-row: 5;
+    grid-area: footer;
+  }
+  .homeContent {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .navLinks {
+    justify-content: left;
+  }
+  a:link {
+    padding: 10px;
+  }
+  .homeImageButton {
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -75px;
+    margin-bottom: -50px;
+  }
+  .menuContainer {
+    display: grid;
+    grid-template-columns: 425px;
+    grid-template-rows: 100px 80px 300px 450px 450px 450px 450px 325px 180px;
+    grid-template-areas: "header" "nav" "logo" "menu1" "menu2" "menu3" "menu4" "cater" "footer";
+    padding: 1em;
+    justify-content: center;
+  }
+  .menuHeader {
+    grid-row: 1;
+    grid-area: header;
+    text-align: center;
+  }
+  .menuNav {
+    grid-row: 2;
+    grid-area: nav;
+  }
+  .menuLogo {
+    grid-row: 3;
+    grid-area: logo;
+  }
+  .menu1 {
+    grid-row: 4;
+    grid-area: menu1;
+  }
+  .menu2 {
+    grid-row: 5;
+    grid-area: menu2;
+  }
+  .menu3 {
+    grid-row: 6;
+    grid-area: menu3;
+  }
+  .menu4 {
+    grid-row: 7;
+    grid-area: menu4;
+  }
+  .menuCater {
+    grid-row: 8;
+    grid-area: cater;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .menuFooter {
+    grid-row: 9;
+    grid-area: footer;
+  }
+  .menuImage {
+    display: inline;
+    padding-bottom: 0;
+  }
+  .menuDescription {
+    display: inline;
+  }
+  .menuItem {
+    justify-content: center;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 425px;
+    grid-template-rows: 100px 80px 350px 550px 300px 180px;
+    grid-template-areas: "header" "nav" "logo" "form" "output" "footer";
+    padding: 1em;
+  }
+  .contactHeader {
+    grid-row: 1;
+    grid-area: header;
+  }
+  .contactNav {
+    grid-row: 2;
+    grid-area: nav;
+  }
+  .contactLogo {
+    grid-row: 3;
+    grid-area: logo;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contactForm {
+    grid-row: 4;
+    grid-area: form;
+    display: inline;
+  }
+  .contactOutput {
+    grid-row: 5;
+    grid-area: output;
+    display: inline;
+  }
+  .contactFooter {
+    grid-row: 6;
+    grid-area: footer;
+  }
+}
