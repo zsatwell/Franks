@@ -1,2 +1,2 @@
-# Franks_Flame_Grill
-The code for the Frank's Flame Grill website
+<h1>Frank's Flame Grill</h1>
+<p>This website demonstrates my use of the grid and flexbox layouts as well as media queries to make the site responsive on multiple screen sizes. The entire site uses    the grid model, with the navigation in the header using the flexbox model. The site also includes a PHP validated form. The device sizes include a full size view for larger screens, a 768px view for tablets, and a 468px view for smartphones.</p>
